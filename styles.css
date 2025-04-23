@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
   /* background-color: #4e4b4b; */
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 :root {
   --bgOrange: #e84949;
 }
@@ -57,6 +61,10 @@
   font-weight: 500;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 .nav-items div a {
   color: black;
   /* transition: all 5s ease; */
@@ -139,6 +147,10 @@ a {
   position: relative;
   z-index: 1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 .btn-pink::before {
   content: "";
   position: absolute;
@@ -152,9 +164,17 @@ a {
   transform-origin: left;
   transition: all 0.8s;
 }
+<<<<<<< HEAD
 .btn-pink:hover::before {
   transform: scaleX(1);
 }
+=======
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+>>>>>>> fc93c8c (Initial commit)
 .btn-pink:hover {
   border: solid 3px var(--bgOrange);
   color: black;
@@ -212,9 +232,17 @@ a {
   0% {
     transform: translateY(0px);
   }
+<<<<<<< HEAD
   50% {
     transform: translateY(-15px);
   }
+=======
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+>>>>>>> fc93c8c (Initial commit)
   100% {
     transform: translateY(0px);
   }
@@ -233,9 +261,17 @@ a {
   0% {
     transform: rotateY(0deg) translateY(0px);
   }
+<<<<<<< HEAD
   50% {
     transform: rotateY(180deg) translateY(-12px);
   }
+=======
+
+  50% {
+    transform: rotateY(180deg) translateY(-12px);
+  }
+
+>>>>>>> fc93c8c (Initial commit)
   100% {
     transform: rotateY(360deg) translateY(0px);
   }
@@ -250,6 +286,10 @@ a {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 @keyframes shakeEffect {
   50% {
     left: 5%;
@@ -270,6 +310,10 @@ a {
     top: 2%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 .icon-plus {
   z-index: 9;
   top: -0.8rem;
@@ -295,6 +339,10 @@ a {
   text-align: center;
   padding-top: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
 .project-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -446,9 +494,17 @@ a {
   margin-left: 120px;
   background-image: url(./images/projects/Screenshot2.png);
 }
+<<<<<<< HEAD
 #project3 {
   background-image: url(./images/projects/Screenshot3.png);
 }
+=======
+
+#project3 {
+  background-image: url(./images/projects/Screenshot3.png);
+}
+
+>>>>>>> fc93c8c (Initial commit)
 #project4 {
   margin-left: 120px;
   background-image: url(./images/projects/Project4.png);
@@ -461,19 +517,35 @@ a {
     text-align: center;
     font-size: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
   .project-container {
     padding: 5px;
     margin: 10px;
     gap: 60px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
   .project-card {
     width: 100%;
     height: 300px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
   .project-card {
     background-size: cover;
     background-position: center;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc93c8c (Initial commit)
   .project-content {
     scale: 0.5;
     bottom: 0;
@@ -481,13 +553,22 @@ a {
     right: 0;
     top: 0;
   }
+<<<<<<< HEAD
   .project-content-left {
     left: 0;
   }
+=======
+
+  .project-content-left {
+    left: 0;
+  }
+
+>>>>>>> fc93c8c (Initial commit)
   .project-heading {
     font-size: 40px;
     width: 100%;
   }
+<<<<<<< HEAD
   .project-sub-heading {
     width: 100%;
   }
@@ -506,6 +587,33 @@ a {
   .project-card:hover .project-number {
     display: none;
   }
+=======
+
+  .project-sub-heading {
+    width: 100%;
+  }
+
+  #project2 {
+    margin-left: 0;
+  }
+
+  #project4 {
+    margin-left: 0;
+  }
+
+  .project-skill-container {
+    width: 100%;
+  }
+
+  .project-skill {
+    width: 35px;
+  }
+
+  .project-card:hover .project-number {
+    display: none;
+  }
+
+>>>>>>> fc93c8c (Initial commit)
   .project-card:hover .project-content {
     scale: 0.55;
   }
@@ -562,12 +670,26 @@ a {
 }
 
 .skills-logo {
+<<<<<<< HEAD
   width: 90px;
   transition: all 0.5s;
+=======
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> fc93c8c (Initial commit)
 }
 
 .skills-logo:hover {
   transform: scale(1.2);
+<<<<<<< HEAD
+=======
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+>>>>>>> fc93c8c (Initial commit)
 }
 
 .skill-heading {
@@ -702,3 +824,179 @@ footer {
   display: flex;
   gap: 1rem;
 }
+<<<<<<< HEAD
+=======
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin: 8px 0;
+}
+
+.footer-middle a,
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-middle a:hover,
+.footer-right a:hover {
+  color: #00bcd4;
+}
+
+.footer-icons a {
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* === DARK MODE STYLES === */
+
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.dark .navbar,
+.dark .hero-section,
+.dark .skills-container,
+.dark .project-section,
+.dark .contactus-form-container,
+.dark .footer {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.dark .logo-text,
+.dark .nav-items div a,
+.dark .hero-section-heading,
+.dark .hero-section-description,
+.dark .project-heading,
+.dark .project-subHeading,
+.dark .project-sub-heading,
+.dark .skill-heading,
+.dark .skill-subHeading p,
+.dark .contactus-sub-heading,
+.dark .contactus-heading,
+.dark .footer-left,
+.dark .footer-middle,
+.dark .footer-right {
+  color: #f1f5f9;
+}
+
+.dark .btn-pink {
+  background-color: #2563eb;
+  color: white;
+}
+
+.dark .btn-pink:hover {
+  background-color: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
+}
+
+.dark .project-card {
+  box-shadow: 0px 0px 40px #0f172a;
+}
+
+.dark .formfield {
+  background-color: #334155;
+  color: white;
+}
+
+.dark .formfield::placeholder {
+  color: #cbd5e1;
+}
+
+.dark .footer-bottom {
+  border-top: 1px solid #334155;
+}
+
+.certificate-section {
+  padding: 60px 20px;
+  background-color: #0d1b2a;
+  text-align: center;
+}
+
+.certificate-heading {
+  font-size: 38px;
+  color: #fca311;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.certificate-card {
+  background-color: #1b263b;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 35px rgba(255, 165, 0, 0.4);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.certificate-card p {
+  padding: 16px;
+  color: #e0e1dd;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1b263b;
+}
+>>>>>>> fc93c8c (Initial commit)

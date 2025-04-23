@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e0eafc);
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: "⭐ ";
+            padding-left: 25px;
+            line-height: 1.8;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Skills Section */
+        .skills-title {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 80px;
+            color: #343a40;
+        }
+
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px auto 100px;
+            max-width: 1000px;
+        }
+
+        .skill-card {
+            background: #1e1e2f;
+            color: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            width: 140px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+            background: #2a2a40;
+        }
+
+        .skill-icon-img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+        }
+
+        .skill-card h3 {
+            font-size: 16px;
+            margin: 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Skills</h1>
+        <div class="skills-section">
+
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>ReactJS</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-node"></i>
+                <h3>Node.js</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MongoDB</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-cogs"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>Next.js</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Tailwind CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                    class="skill-icon-img">
+                <h3>Postman</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.worldvectorlogo.com/logos/express-109.svg" alt="Express.js"
+                    class="skill-icon-img">
+                <h3>Express.js</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                    alt="MySQL Logo" class="skill-icon-img">
+
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel" class="skill-icon-img">
+                <h3>Laravel / PHP</h3>
+            </div>
+
+        </div>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+
+</html>
