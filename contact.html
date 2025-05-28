@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MD JAMI KHAN</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body.dark {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        .contact-container {
+            background-color: var(--card-light);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 40px;
+            width: 90%;
+            max-width: 1700px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            animation: slideIn 0.8s ease;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark .contact-container {
+            background-color: var(--card-dark);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 32px;
+            color: var(--accent-light);
+            letter-spacing: 1px;
+        }
+
+        .dark h2 {
+            color: var(--accent-dark);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        input,
+        textarea {
+            background: var(--card-light);
+            border: 2px solid var(--accent-light);
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: var(--text-light);
+            transition: 0.3s;
+        }
+
+        .dark input,
+        .dark textarea {
+            background: var(--card-dark);
+            border-color: var(--accent-dark);
+            color: var(--text-dark);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #888;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: var(--secondary-light);
+            outline: none;
+            box-shadow: 0 0 10px var(--accent-light);
+        }
+
+        .dark input:focus,
+        .dark textarea:focus {
+            background-color: var(--secondary-dark);
+            box-shadow: 0 0 10px var(--accent-dark);
+        }
+
+        button {
+            padding: 14px;
+            background: var(--accent-light);
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .dark button {
+            background: var(--accent-dark);
+        }
+
+        button:hover {
+            transform: scale(1.02);
+            background: var(--secondary-light);
+        }
+
+        .dark button:hover {
+            background: var(--secondary-dark);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 12px 25px;
+            border-radius: 25px;
+            background: var(--accent-light);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .dark .back-link {
+            background: var(--accent-dark);
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px);
+            background: var(--secondary-light);
+        }
+
+        .dark .back-link:hover {
+            background: var(--secondary-dark);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-background"></div>
+    <div class="dots-background"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+
+    <div id="wrapper">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="./images/userAsset/NavLogo.jpg" class="logo" alt="Logo" />
+                <div class="logo-text">JAMI KHAN</div>
+            </div>
+
+            <div class="nav-items">
+                <div><a href="index.html#projects">Projects</a></div>
+                <div><a href="skills.html">Skills</a></div>
+                <div><a href="achievements.html">Achievements</a></div>
+                <div><a href="contact.html">Contact Me</a></div>
+                <div><a href="resume.html">Resume</a></div>
+                <div><a href="about.html">Aboutus</a></div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-section">
+            <h1 class="section-heading">Get In Touch</h1>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kjami2911@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9773649449</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/mdjamikhan" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jamikhan09/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required class="form-input" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required class="form-input" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required class="form-input" placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-pink">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>MD JAMI KHAN</h3>
+                    <p>Thank you for visiting my portfolio website.<br />Let's connect!</p>
+                </div>
+
+                <div class="footer-middle">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Connect</h4>
+                    <div class="footer-icons">
+                        <a href="https://github.com/mdjamikhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jamikhan09/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:kjami2911@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MD JAMI KHAN. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Create dots background
+        function createDots() {
+            const dotsContainer = document.querySelector('.dots-background');
+            const numberOfDots = 50;
+
+            for (let i = 0; i < numberOfDots; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.style.left = `${Math.random() * 100}%`;
+                dot.style.top = `${Math.random() * 100}%`;
+                dot.style.animationDelay = `${Math.random() * 5}s`;
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        // Cursor Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            createDots();
+            
+            const cursor = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-dot-outline');
+            
+            // Hide default cursor
+            document.body.style.cursor = 'none';
+            
+            // Add hoverable class to interactive elements
+            const interactiveElements = document.querySelectorAll('a, button, .form-input, .social-icon');
+            interactiveElements.forEach(el => {
+                el.classList.add('hoverable');
+                el.classList.add('glow-effect');
+            });
+            
+            // Cursor movement
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                cursor.style.left = `${posX}px`;
+                cursor.style.top = `${posY}px`;
+                
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, {
+                    duration: 500,
+                    fill: 'forwards'
+                });
+            });
+
+            // Form input animations
+            document.querySelectorAll('.form-input').forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.parentElement.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', () => {
+                    if (!input.value) {
+                        input.parentElement.classList.remove('focused');
+                    }
+                });
+            });
+
+            // Social icon hover effects
+            document.querySelectorAll('.social-icon').forEach(icon => {
+                icon.addEventListener('mousemove', (e) => {
+                    const rect = icon.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const deltaX = (x - centerX) / centerX;
+                    const deltaY = (y - centerY) / centerY;
+                    
+                    icon.style.transform = `translate(${deltaX * 5}px, ${deltaY * 5}px) scale(1.1)`;
+                });
+                
+                icon.addEventListener('mouseleave', () => {
+                    icon.style.transform = 'translate(0, 0) scale(1)';
+                });
+            });
+            
+            // Hide/show cursor
+            document.addEventListener('mouseleave', () => {
+                cursor.style.opacity = '0';
+                cursorOutline.style.opacity = '0';
+            });
+            
+            document.addEventListener('mouseenter', () => {
+                cursor.style.opacity = '1';
+                cursorOutline.style.opacity = '1';
+            });
+
+            // Form submission animation
+            document.getElementById('contactForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const button = e.target.querySelector('button');
+                button.innerHTML = 'Sending...';
+                button.classList.add('loading');
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    button.innerHTML = 'Message Sent!';
+                    button.classList.remove('loading');
+                    button.classList.add('success');
+                    
+                    // Reset form
+                    setTimeout(() => {
+                        e.target.reset();
+                        button.innerHTML = 'Send Message';
+                        button.classList.remove('success');
+                    }, 2000);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+
+</html>

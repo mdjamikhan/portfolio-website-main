@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - MD JAMI KHAN</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: var(--background-light);
+            color: var(--text-light);
+        }
+
+        body.dark {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        .resume-container {
+            background-color: var(--card-light);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .dark .resume-container {
+            background-color: var(--card-dark);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .section {
+            background-color: var(--secondary-light);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark .section {
+            background-color: var(--secondary-dark);
+        }
+
+        h1 {
+            color: var(--accent-light);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .dark h1 {
+            color: var(--accent-dark);
+        }
+
+        h2 {
+            color: var(--accent-light);
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .dark h2 {
+            color: var(--accent-dark);
+            border-bottom-color: var(--accent-dark);
+        }
+
+        a {
+            color: var(--accent-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .dark a {
+            color: var(--accent-dark);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .return-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-light);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .dark .return-btn {
+            background-color: var(--accent-dark);
+        }
+
+        .return-btn:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+            background-color: var(--secondary-light);
+        }
+
+        .dark .return-btn:hover {
+            background-color: var(--secondary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-background"></div>
+    <div class="dots-background"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+
+    <div id="wrapper">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="./images/userAsset/NavLogo.jpg" class="logo" alt="Logo" />
+                <div class="logo-text">JAMI KHAN</div>
+            </div>
+
+            <div class="nav-items">
+                <div><a href="index.html#projects">Projects</a></div>
+                <div><a href="skills.html">Skills</a></div>
+                <div><a href="achievements.html">Achievements</a></div>
+                <div><a href="contact.html">Contact Me</a></div>
+                <div><a href="resume.html">Resume</a></div>
+                <div><a href="about.html">Aboutus</a></div>
+            </div>
+        </div>
+
+        <!-- Resume Section -->
+        <section class="resume-section">
+            <div class="resume-container">
+                <div class="resume-header">
+                    <h1 class="resume-title">My Resume</h1>
+                    <p class="resume-subtitle">
+                        Full Stack Web Developer with expertise in modern web technologies and a passion for creating 
+                        efficient, scalable, and user-friendly applications.
+                    </p>
+                </div>
+
+                <div class="resume-grid">
+                    <!-- Education Section -->
+                    <div class="resume-column">
+                        <h2 class="resume-section-title">Education</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2020 - 2024</span>
+                                <h3 class="timeline-title">Bachelor of Technology in Computer Science</h3>
+                                <p class="timeline-subtitle">Haldia Institute of Technology</p>
+                                <div class="timeline-content">
+                                    <p>• CGPA: 8.9/10</p>
+                                    <p>• Specialized in Web Development and Data Structures</p>
+                                    <p>• Active member of the Coding Club</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2018 - 2020</span>
+                                <h3 class="timeline-title">Higher Secondary Education</h3>
+                                <p class="timeline-subtitle">Malda Town High School</p>
+                                <div class="timeline-content">
+                                    <p>• Percentage: 92%</p>
+                                    <p>• Science Stream with Computer Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="resume-column">
+                        <h2 class="resume-section-title">Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 - Present</span>
+                                <h3 class="timeline-title">Full Stack Developer Intern</h3>
+                                <p class="timeline-subtitle">Tech Solutions Inc.</p>
+                                <div class="timeline-content">
+                                    <p>• Developed and maintained web applications using React and Node.js</p>
+                                    <p>• Implemented responsive designs and optimized application performance</p>
+                                    <p>• Collaborated with team members using Git and Agile methodologies</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - 2023</span>
+                                <h3 class="timeline-title">Web Development Project Lead</h3>
+                                <p class="timeline-subtitle">College Technical Club</p>
+                                <div class="timeline-content">
+                                    <p>• Led a team of 5 developers in creating the college event portal</p>
+                                    <p>• Implemented user authentication and database management</p>
+                                    <p>• Achieved 40% improvement in event registration process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h2 class="resume-section-title">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend Development</h4>
+                            <ul class="skill-list">
+                                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                <li>React.js, Next.js</li>
+                                <li>Redux, Context API</li>
+                                <li>Tailwind CSS, Material-UI</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend Development</h4>
+                            <ul class="skill-list">
+                                <li>Node.js, Express.js</li>
+                                <li>MongoDB, MySQL</li>
+                                <li>RESTful APIs</li>
+                                <li>Authentication & Authorization</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="skill-list">
+                                <li>Git, GitHub</li>
+                                <li>VS Code, Postman</li>
+                                <li>Docker Basics</li>
+                                <li>AWS (Basic Services)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <ul class="skill-list">
+                                <li>Problem Solving</li>
+                                <li>Team Leadership</li>
+                                <li>Communication</li>
+                                <li>Time Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="download-cv">
+                    <div class="download-header">
+                        <h3>Download My Resume</h3>
+                        <p>Get a detailed copy of my resume in PDF format</p>
+                    </div>
+                    <div class="download-options">
+                        <a href="https://drive.google.com/file/d/1OD2ocMsXprXuubYGqgoqz3iyvim7ix_H/view?usp=sharing" 
+                           class="download-button" 
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fas fa-file-pdf"></i>
+                            View PDF Resume
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1OD2ocMsXprXuubYGqgoqz3iyvim7ix_H" 
+                           class="download-button secondary"
+                           download>
+                            <i class="fas fa-download"></i>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>MD JAMI KHAN</h3>
+                    <p>Thank you for visiting my portfolio website.<br />Connect with me for opportunities!</p>
+                </div>
+
+                <div class="footer-middle">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Connect</h4>
+                    <div class="footer-icons">
+                        <a href="https://github.com/mdjamikhan" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jamikhan09/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:kjami2911@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MD JAMI KHAN. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Create dots background
+        function createDots() {
+            const dotsContainer = document.querySelector('.dots-background');
+            const numberOfDots = 50;
+
+            for (let i = 0; i < numberOfDots; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.style.left = `${Math.random() * 100}%`;
+                dot.style.top = `${Math.random() * 100}%`;
+                dot.style.animationDelay = `${Math.random() * 5}s`;
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            createDots();
+            
+            // Cursor Animation
+            const cursor = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-dot-outline');
+            
+            document.body.style.cursor = 'none';
+            
+            const interactiveElements = document.querySelectorAll('a, button, .timeline-item, .skill-category');
+            interactiveElements.forEach(el => {
+                el.classList.add('hoverable');
+                el.classList.add('glow-effect');
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                cursor.style.left = `${posX}px`;
+                cursor.style.top = `${posY}px`;
+                
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, {
+                    duration: 500,
+                    fill: 'forwards'
+                });
+            });
+            
+            document.addEventListener('mouseleave', () => {
+                cursor.style.opacity = '0';
+                cursorOutline.style.opacity = '0';
+            });
+            
+            document.addEventListener('mouseenter', () => {
+                cursor.style.opacity = '1';
+                cursorOutline.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+
+</html>
