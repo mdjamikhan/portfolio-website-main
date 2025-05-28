@@ -270,6 +270,7 @@
             background-color: rgba(232, 73, 73, 0.2);
         }
 
+        /* Interactive elements cursor effects */
         .hoverable {
             cursor: none;
         }
@@ -280,6 +281,41 @@
 
         .hoverable:hover ~ .cursor-dot-outline {
             transform: translate(-50%, -50%) scale(1.5);
+        }
+
+        /* Add glow effect */
+        .glow-effect {
+            position: relative;
+            z-index: 1;
+        }
+
+        .glow-effect:hover {
+            color: var(--accent);
+        }
+
+        .glow-effect::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--accent);
+            z-index: -1;
+            opacity: 0;
+            border-radius: inherit;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .glow-effect:hover::before {
+            opacity: 0.1;
+        }
+
+        @media (hover: none) {
+            .cursor-dot,
+            .cursor-dot-outline {
+                display: none;
+            }
         }
 
         @media (max-width: 768px) {
@@ -337,6 +373,9 @@
 </head>
 
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+    
     <div class="navbar">
         <div class="logo-container">
             <img src="./images/userAsset/NavLogo.jpg" class="logo" />
@@ -511,17 +550,21 @@
 
     <script>
         // Initialize cursor animation
-        function initCursorAnimation() {
+        document.addEventListener('DOMContentLoaded', () => {
             const cursor = document.querySelector('.cursor-dot');
             const cursorOutline = document.querySelector('.cursor-dot-outline');
             
+            // Hide default cursor
             document.body.style.cursor = 'none';
             
+            // Add hoverable class to interactive elements
             const interactiveElements = document.querySelectorAll('a, button, .skill-item, .project-title, .download-btn, .return-btn');
             interactiveElements.forEach(el => {
                 el.classList.add('hoverable');
+                el.classList.add('glow-effect');
             });
             
+            // Cursor movement
             window.addEventListener('mousemove', (e) => {
                 const posX = e.clientX;
                 const posY = e.clientY;
@@ -538,20 +581,16 @@
                 });
             });
             
-            document.addEventListener('mouseenter', () => {
-                cursor.style.opacity = '1';
-                cursorOutline.style.opacity = '1';
-            });
-            
+            // Hide/show cursor
             document.addEventListener('mouseleave', () => {
                 cursor.style.opacity = '0';
                 cursorOutline.style.opacity = '0';
             });
-        }
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            initCursorAnimation();
+            
+            document.addEventListener('mouseenter', () => {
+                cursor.style.opacity = '1';
+                cursorOutline.style.opacity = '1';
+            });
         });
     </script>
 </body>
