@@ -178,8 +178,6 @@
       </div>
     </div>
 
-    <!-- Skills Section -->
-    <!-- Skills Section -->
     <div id="skills" class="container skills-container">
       <div class="skill-fade-text">Skills</div>
 
@@ -205,7 +203,6 @@
       <div class="skill-container-right">
         <img src="./images/userAsset/blob vector.png" class="blob-style" alt="Blob" />
 
-        <!-- Skill Logos (add or remove based on your stack) -->
         <img src="./images/stack/HTML.png" alt="HTML" class="skills-logo" title="HTML" />
         <img src="./images/stack/CSS.png" alt="CSS" class="skills-logo" title="CSS" />
         <img src="./images/stack/Javascript.svg" alt="JavaScript" class="skills-logo" title="JavaScript" />
@@ -228,7 +225,6 @@
     </div>
 
 
-    <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
@@ -263,7 +259,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <!-- Typed.js Initialization -->
   <script>
     var typeData = new Typed(".role", {
       strings: [
@@ -279,7 +274,6 @@
       backDelay: 1000,
     });
 
-    // Parallax effect
     document.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
       const parallaxElements = document.querySelectorAll('.hero-section-right, .project-card');
@@ -290,7 +284,6 @@
       });
     });
 
-    // Smooth reveal animation for projects
     const observerOptions = {
       threshold: 0.1
     };
@@ -311,22 +304,18 @@
       observer.observe(card);
     });
 
-    // Cursor Animation
     document.addEventListener('DOMContentLoaded', () => {
       const cursor = document.querySelector('.cursor-dot');
       const cursorOutline = document.querySelector('.cursor-dot-outline');
       
-      // Hide default cursor
       document.body.style.cursor = 'none';
       
-      // Add hoverable class to interactive elements
       const interactiveElements = document.querySelectorAll('a, button, .project-card, .skills-logo');
       interactiveElements.forEach(el => {
         el.classList.add('hoverable');
         el.classList.add('glow-effect');
       });
       
-      // Cursor movement
       window.addEventListener('mousemove', (e) => {
         const posX = e.clientX;
         const posY = e.clientY;
@@ -334,7 +323,6 @@
         cursor.style.left = `${posX}px`;
         cursor.style.top = `${posY}px`;
         
-        // Add smooth follow effect for cursor outline
         cursorOutline.animate({
           left: `${posX}px`,
           top: `${posY}px`
@@ -344,7 +332,6 @@
         });
       });
       
-      // Magnetic effect for buttons
       document.querySelectorAll('.btn-pink').forEach(button => {
         button.classList.add('magnetic-effect');
         
@@ -367,7 +354,6 @@
         });
       });
       
-      // Add ripple effect to clickable elements
       document.querySelectorAll('a, button').forEach(element => {
         element.classList.add('ripple');
         
@@ -386,20 +372,17 @@
         });
       });
       
-      // Hide cursor when leaving window
       document.addEventListener('mouseleave', () => {
         cursor.style.opacity = '0';
         cursorOutline.style.opacity = '0';
       });
       
-      // Show cursor when entering window
       document.addEventListener('mouseenter', () => {
         cursor.style.opacity = '1';
         cursorOutline.style.opacity = '1';
       });
     });
 
-    // Add dots to background
     function createDots() {
       const dotsContainer = document.querySelector('.dots-background');
       const numberOfDots = 50;
@@ -414,7 +397,6 @@
       }
     }
 
-    // Initialize dots on page load
     document.addEventListener('DOMContentLoaded', createDots);
   </script>
 </body>

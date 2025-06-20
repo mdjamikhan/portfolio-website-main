@@ -642,6 +642,10 @@ a {
   .project-card:hover .project-content {
     scale: 0.55;
   }
+
+  .user-image img {
+    display: none !important;
+  }
 }
 
 /* Skills Section Styles */
@@ -1021,6 +1025,11 @@ textarea.form-input {
 }
 
 @media screen and (max-width: 992px) {
+  .user-image img{
+    height:80%
+  }
+
+  
     .contact-container {
         grid-template-columns: 1fr;
         gap: 30px;
